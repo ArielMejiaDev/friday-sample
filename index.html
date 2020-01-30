@@ -1,0 +1,564 @@
+
+<!doctype html>
+<html class="no-js" lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title>recaudar</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400%7CPoppins:200,400,500,600,700%7CPlayfair+Display:400,700i" rel="stylesheet">
+		<link rel="icon" type="image/png" href="favicon.ico">
+		<!-- Place favicon.ico in the root directory -->
+		<link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+		<!-- Icon foont list -->
+		<link rel="stylesheet" href="src/css/iconfont.css">
+		<link rel="stylesheet" href="src/css/font-awesome.min.css">
+
+		<!-- bootstrap -->
+		<link rel="stylesheet" href="src/css/bootstrap.min.css">
+		<!-- isotope -->
+		<link rel="stylesheet" href="src/css/isotope.css">
+		<!-- magnific -->
+		<link rel="stylesheet" href="src/css/magnific-popup.css">
+		<!-- owl carousel -->
+		<link rel="stylesheet" href="src/css/owl.carousel.min.css">
+		<link rel="stylesheet" href="src/css/owl.theme.default.min.css">
+		<!-- woocommerce -->
+		<link rel="stylesheet" href="src/css/woocommerce.css">
+
+
+		<!--For Plugins external css-->
+		<link rel="stylesheet" href="src/css/plugins.css" />
+
+		<!--Theme custom css -->
+		<link rel="stylesheet" href="src/css/style.css">
+
+		<!--Theme Responsive css-->
+        <link rel="stylesheet" href="src/css/responsive.css" />
+
+		<script src="src/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+
+	<body class="woocommerce">
+
+		<div id="preloader">
+			<div class="spinner">
+				<div class="double-bounce1"></div>
+				<div class="double-bounce2"></div>
+			</div>
+        </div>
+        <!-- #preloader -->
+
+<!-- section -->
+
+    <!-- header version inner menu -->
+    <header class="xs-header-height xs-menu-style-transparent xs-menu-style-border fundpress-header-main-version color-navy-blue v3">
+        <div class="container">
+            <nav class="xs-menus fundpress-menu">
+                <div class="nav-header">
+                    <div class="nav-toggle"></div>
+                    <a class="nav-brand nav-logo" href="index.html">
+                        <img src="src/images/logo-recaudar.png" alt="">
+                    </a>
+                </div><!-- . END -->
+                <div class="nav-menus-wrapper">
+                    <div class="xs-logo-wraper d-flex align-items-center">
+                        <a class="nav-brand xs-logo" href="index.html">
+                            <img src="src/images/logo-recaudar.png" alt="">
+                        </a>
+                    </div>
+                    <ul class="nav-menu">
+                        <li><a href="contact.html">Inicio</a></li>
+                        <li><a href="about.html">Quienes somos</a></li>
+                        
+                        <li><a href="contact.html">Contacto</a></li>
+                    </ul>
+                    <div class="xs-navs-button">
+                        <!-- Authentication Links -->
+                        <ul class="xs-icon-with-text fundpress-icon-menu">
+                                                <li>
+                                <a
+                                    href="http://recaudar.test/login"
+                                    data-toggle="modal"
+                                    data-target=".bd-example-modal-lg"
+                                >
+                                    <i class="fa fa-unlock-alt color-green">
+                                    </i>Login
+                                </a>
+                            </li>
+                                                        <li
+                                    class="d-block d-lg-none d-xl-block">
+                                    <a
+                                        href="http://recaudar.test/register"
+                                        data-toggle="modal"
+                                        data-target=".register-modal"
+                                        class="xs-btn round-btn green-btn">Crea tu campaña
+                                    </a>
+                                </li>
+                                                                    </ul>
+                    </div>
+                </div><!-- .nav-menus-wrapper END -->
+            </nav><!-- .xs-menus .fundpress-menu END -->
+        </div>
+    </header>
+    <!-- header version inner menu closed -->
+
+    <!-- modal -->
+    <div class="modal fade bd-example-modal-lg xs-modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="fundpress-tab-nav-v5">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#login" role="tab" data-toggle="tab">
+                                Login
+                            </a>
+                        </li>
+                    </ul>
+                </div><!-- fundpress-tab-nav-v3 -->
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane fadeInRights show fade in active" id="login">
+                        <form method="POST" action="http://recaudar.test/login" >
+                            <input type="hidden" name="_token" value="sTbJO44thjh8uXzDiUSC8RDq9ZyRKEalp0PVoDQy">
+                                
+                                
+                            <div class="xs-input-group-v2">
+                                <i class="icon icon-profile-male"></i>
+                                <input id="email" type="email"
+                                    class="form-control  xs-input-control"
+                                    name="email" value="" required autocomplete="email"
+                                    autofocus placeholder="Ingresa tu Email">
+                            </div>
+                            <div class="xs-input-group-v2">
+                                <i class="icon icon-key2"></i>
+                                <input id="password" type="password"
+                                    class="form-control  xs-input-control" name="password"
+                                    required autocomplete="current-password" placeholder="Ingresa tu password">
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-md-6 offset-md-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="remember" id="remember" >
+
+                                        <label class="form-check-label" for="remember">
+                                            Recuérdame
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="xs-submit-wraper xs-mb-20">
+                                <input type="submit" name="submit" value="Entrar" id="xs_contact_get_action" class="btn btn-warning btn-block">
+                            </div>
+                                                        <a class="btn btn-link" href="http://recaudar.test/password/reset">
+                                    ¿Olvidó su contraseña?
+                                </a>
+                                                    
+                        </form>
+                    </div><!-- tab-pane -->
+                </div><!-- tab-content -->
+            </div>
+        </div>
+    </div>
+    <!-- End modal -->
+    <!-- End home section -->
+
+    <!-- modal -->
+    <div class="modal fade register-modal xs-modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="fundpress-tab-nav-v5">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#signup" role="tab" data-toggle="tab">
+                                Signup
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <form  method="POST" action="http://recaudar.test/register" id="xs-register-form">
+                        <input type="hidden" name="_token" value="sTbJO44thjh8uXzDiUSC8RDq9ZyRKEalp0PVoDQy">																				<div class="xs-input-group-v2">
+                            <i class="icon icon-profile-male"></i>
+                            <input id="name" type="text" class="form-control xs-input-control " name="name" value="" required autocomplete="name" autofocus placeholder="Tu nombre">
+                        </div>
+                        <div class="xs-input-group-v2">
+                            <i class="icon icon-envelope2"></i>
+                            <input  id="email" type="email" class="form-control xs-input-control " name="email" value="" required autocomplete="email" placeholder="Tu email">
+                        </div>
+                        <div class="xs-input-group-v2">
+                            <i class="icon icon-key2"></i>
+                            <input id="password" type="password" class="form-control xs-input-control " name="password" required autocomplete="new-password" placeholder="Tu password">
+                        </div>
+                        <div class="xs-input-group-v2">
+                            <i class="icon icon-key2"></i>
+                            <input id="password-confirm" type="password" class="form-control xs-input-control" name="password_confirmation" required autocomplete="new-password" placeholder="Repite tu password">
+                        </div>
+                        <div class="xs-submit-wraper xs-mb-20">
+                            <input type="submit" name="submit" value="Registrar" id="xs_register_get_action" class="btn btn-warning btn-block">
+                        </div>
+                        
+                    </form>
+            </div>
+        </div>
+    </div>
+    <!-- End modal --><!-- End home section -->
+
+    <!-- welcome section -->
+    <section class="xs-screen-height xs-welcome-section xs-bg fundpress-welcome-section">
+        <div class="xs-banner-slider owl-carousel">
+
+
+            <div class="xs-banner-slider-item" >
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="xs-welcome-content version-3">
+                                <div class="xs-welcome-wraper">
+                                    
+                                    <h2>Fundal</h2>
+                                    <div class="xs-btn-wraper">
+                                        <a href="/fundal/index.html" class="xs-btn navy-blue-btn round-btn">Ver perfil</a>
+                                    </div>
+                                </div><!-- .xs-welcome-wraper END -->
+                            </div><!-- .xs-welcome-content END -->
+                        </div>
+                        <div class="col-lg-6" >
+                            <div class="xs-welcome-content">
+                                <div class="xs-welcome-wraper">
+                                    
+                                    <img src="src/images/fundal/foto-fundal-1.png" alt="">
+                                </div><!-- .xs-welcome-wraper END -->
+                            </div><!-- .xs-welcome-content END -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="xs-banner-slider-item" >
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="xs-welcome-content version-3">
+                                <div class="xs-welcome-wraper">
+                                    
+                                    <h2>Fundacion Maia</h2>
+                                    <div class="xs-btn-wraper">
+                                        <a href="/maia/index.html" class="xs-btn navy-blue-btn round-btn">Ver perfil</a>
+                                    </div>
+                                </div><!-- .xs-welcome-wraper END -->
+                            </div><!-- .xs-welcome-content END -->
+                        </div>
+                        <div class="col-lg-6" >
+                            <div class="xs-welcome-content">
+                                <div class="xs-welcome-wraper">
+                                    
+                                    <img src="src/images/maia/foto-maia-1.png" alt="">
+                                </div><!-- .xs-welcome-wraper END -->
+                            </div><!-- .xs-welcome-content END -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="xs-banner-slider-item" >
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="xs-welcome-content version-3">
+                                <div class="xs-welcome-wraper">
+                                    
+                                    <h2>San Judas Tadeo</h2>
+                                    <div class="xs-btn-wraper">
+                                        <a href="/sanjudastadeo/index.html" class="xs-btn navy-blue-btn round-btn">Ver perfil</a>
+                                    </div>
+                                </div><!-- .xs-welcome-wraper END -->
+                            </div><!-- .xs-welcome-content END -->
+                        </div>
+                        <div class="col-lg-6" >
+                            <div class="xs-welcome-content">
+                                <div class="xs-welcome-wraper">
+                                    
+                                    <img src="src/images/sanjudastadeo/sj-1.png" alt="">
+                                </div><!-- .xs-welcome-wraper END -->
+                            </div><!-- .xs-welcome-content END -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- End welcome section -->
+
+    <!-- side by side product -->
+    <section class="xs-full-width-section fundpress-full-width-section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 col-lg-6 xs-padding-0">
+                    <div class="fundpress-full-width-wraper-v2" style="background-image: url(src/images/side-by-side/1.jpg)">
+                        <div class="fundpress-product-hover-content-v2">
+                            <div class="fundpress-sub-title">
+                                <h2>Fundaciones</h2>
+                            </div>
+                            <div class="fundpress-product-text-content">
+                                
+                            </div>
+                            <div class="xs-btn-wrapre">
+                                <a href="mailto:otto@recaudar.com" class="xs-btn btn xs-box-shadow btn-primary btn-lg round-btn">Quiero recaudar fondos</a>
+                            </div>
+                        </div><!-- .fundpress-product-hover-content-v2 END -->
+                        <div class="xs-solid-overlay xs-bg-black"></div>
+                    </div><!-- .fundpress-full-width-wraper-v2 END -->
+                </div>
+                <div class="col-md-12 col-lg-6 xs-padding-0">
+                    <div class="fundpress-full-width-wraper-v2" style="background-image: url(src/images/side-by-side/2.jpg)">
+                        <div class="fundpress-product-hover-content-v2">
+                            <div class="fundpress-sub-title">
+                                <h2>Apoyar</h2>
+                            </div>
+                            <div class="fundpress-product-text-content">
+                                
+                            </div>
+                            <div class="xs-btn-wrapre">
+                                <a href="#foundations" class="xs-btn xs-box-shadow btn btn-primary btn-lg round-btn">Quiero ayudar a otros</a>
+                            </div>
+                        </div><!-- .fundpress-product-hover-content-v2 END -->
+                        <div class="xs-solid-overlay xs-bg-black"></div>
+                    </div><!-- .fundpress-full-width-wraper-v2 END -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End side by side product -->
+
+    <!-- version 2 caouse matters -->
+    <section  class="xs-section-padding fundpress-cause-matters-v2" data-scrollax-parent="true">
+        <div class="container">
+            <div class="fundpress-heading-title-v3 text-center wow fadeInUp" data-wow-duration="1s">
+                <div class="fundpress-heading-title-content">
+                    <h2>Porque tu causa importa</h2>
+                    <p>Nosotros nos encargamos de que todo sea de forma transparente, segura y rápida.</p>
+                </div>
+                <span class="parallax-title" data-scrollax="properties: { translateY: '-250px' }"></span>
+            </div><!-- section heading -->
+            <div class="row">
+
+                <div class="col-md-4">
+                    <div class="fundpress-icon-with-square-service-v2 wow fadeInUp" data-wow-duration="1.2s">
+                        <i class="icon icon-cogwheel-outline xs-check-mark"></i>
+                        <h4>Crecimiento</h4>
+                        <p>
+                            Nosotros te cobramos un pequeno porcentaje, para que a las fundaciones les sea totalmente gratuito, todo es usado para mejorar y apoyar a mas fundaciones.
+                        </p>
+                    </div><!-- .fundpress-icon-with-square-service-v2 END -->
+                </div>
+
+                <div class="col-md-4">
+                    <div class="fundpress-icon-with-square-service-v2 wow fadeInUp" data-wow-duration="1.2s">
+                        <i class="icon icon-symbol xs-check-mark"></i>
+                        <h4>Seguridad Garantizada</h4>
+                        <p>
+                            Nuestra plataforma y aliados nos permiten contar con los niveles más altos de seguridad de la industria protegiendo tus datos y los pagos.
+                        </p>
+                    </div><!-- .fundpress-icon-with-square-service-v2 END -->
+                </div>
+
+                <div class="col-md-4">
+                    <div class="fundpress-icon-with-square-service-v2 wow fadeInUp" data-wow-duration="1.2s">
+                        <i class="icon icon-support xs-check-mark"></i>
+                        <h4>Soporte</h4>
+                        <p>
+                            Te brindamos soporte 24/7 por chat, para que tu experiencia sea increible.
+                        </p>
+                    </div><!-- .fundpress-icon-with-square-service-v2 END -->
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- End version 2 caouse matters -->
+
+    <!-- popular campaigns version 2 -->
+    <section id="foundations" class="waypoint-tigger xs-section-padding fundpress-popular-campaigns-v2 xs-gray-bg-2" data-scrollax-parent="true">
+        <div class="container">
+            <div class="fundpress-heading-title-v3 text-center wow fadeInUp" data-wow-duration="1s">
+                <div class="fundpress-heading-title-content">
+                    <h2>Fundaciones</h2>
+                    
+                </div>
+                <span class="parallax-title" data-scrollax="properties: { translateY: '-250px' }">Foundaciones</span>
+            </div><!-- section heading -->
+            <div class="row">
+
+                <div class="col-lg-4 mb-3">
+                    <div class="fundpress-grid-item-content wow fadeInUp animated" >
+                        <div class="fundpress-item-header xs-mb-30">
+                            <img src="src/images/fundal/foto-fundal-2.png" alt="">
+                        </div><!-- .fundpress-item-header END -->
+                        <div class="fundpress-item-content">
+                            <ul class="xs-simple-tag fundpress-simple-tag">
+                                <li><a href="#">Educacion</a></li>
+                            </ul>
+                            <a href="#" class="d-block color-navy-blue fundpress-post-title">
+                                Fundal
+                            </a>
+                            <ul class="xs-list-with-content fundpress-list-item-content">
+                                <span>
+                                    Dedicada a desarrollar personas con sordoceguera y discapacidad múltiple, como miembros activos de su sociedad.
+                                </span>
+                            </ul>
+                            <a href="/fundal/index.html" class="xs-btn navy-blue-btn round-btn mt-3">Ver perfil</a>
+                        </div><!-- .fundpress-item-content END -->
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 mb-3">
+                    <div class="fundpress-grid-item-content wow fadeInUp animated" >
+                        <div class="fundpress-item-header xs-mb-30">
+                            <img src="src/images/maia/foto-maia-2.png" alt="">
+                        </div><!-- .fundpress-item-header END -->
+                        <div class="fundpress-item-content">
+                            <ul class="xs-simple-tag fundpress-simple-tag">
+                                <li><a href="">Educacion</a></li>
+                            </ul>
+                            <a href="#" class="d-block color-navy-blue fundpress-post-title">
+                                Fundacion Maia
+                            </a>
+                            <ul class="xs-list-with-content fundpress-list-item-content">
+                                <span>
+                                    Impulsamos a jóvenes pioneras en Guatemala para que impacten en su familia, su comunidad, el país y el mundo.
+                                </span>
+                            </ul>
+                            <a href="/maia/index.html" class="xs-btn navy-blue-btn round-btn mt-3">Ver perfil</a>
+                        </div><!-- .fundpress-item-content END -->
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-3">
+                    <div class="fundpress-grid-item-content wow fadeInUp animated" >
+                        <div class="fundpress-item-header xs-mb-30">
+                            <img src="src/images/sanjudastadeo/foto-sjt-2.png" alt="">
+                        </div><!-- .fundpress-item-header END -->
+                        <div class="fundpress-item-content">
+                            <ul class="xs-simple-tag fundpress-simple-tag">
+                                <li><a href="">Educacion</a></li>
+                            </ul>
+                            <a href="#" class="d-block color-navy-blue fundpress-post-title">
+                                Fundacion San Judas Tadeo
+                            </a>
+                            <ul class="xs-list-with-content fundpress-list-item-content">
+                                <span>
+                                    Somos una comunidad educativa católica comprometida con una educación integral.
+                                </span>
+                            </ul>
+                            <a href="/sanjudastadeo/index.html" class="xs-btn navy-blue-btn round-btn mt-3">Ver perfil</a>
+                        </div><!-- .fundpress-item-content END -->
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- End popular campaigns version 2 -->
+
+    <!-- Footer section -->
+    <footer class="xs-footer-section fundpress-footer-section">
+        <div class="fundpress-footer-top-layer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="fundpress-single-footer">
+                            <div class="xs-footer-logo">
+                                <a href="index.html">
+                                    <img src="src/images/logo-recaudar.png" alt="">
+                                </a>
+                            </div>
+                            <div class="fundpress-footer-content">
+                                
+                            </div><!-- . END -->
+                            <ul class="xs-social-list fundpress-social-list">
+                                <li><a href="#" class="color-facebook full-round"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#" class="color-twitter full-round"><i class="fa fa-twitter"></i></a></li>
+                                
+                                <li><a href="#" class="color-instagram full-round"><i class="fa fa-instagram"></i></a></li>
+                            </ul><!-- .xs-social-list .fundpress-social-list END -->
+                        </div><!-- .fundpress-single-footer END -->
+                    </div>
+                    
+                    <div class="col-md-3">
+                        <div class="fundpress-single-footer">
+                            <div class="xs-footer-title">
+                                <h4 class="color-white">Acerca de</h4>
+                            </div><!-- .xs-footer-title END -->
+                            <nav class="xs-footer-menu">
+                                <ul>
+                                    <li><a href="#">Acerca de nosotros</a></li>
+                                    <li><a href="#">Como Funciona</a></li>
+                                    <li><a href="#">Empleos</a></li>
+                                    <li><a href="#">Prensa</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">Contacto</a></li>
+                                </ul>
+                            </nav><!-- .xs-footer-menu .xs-block-menu END -->
+                        </div><!-- .fundpress-single-footer END -->
+                    </div>
+                    <div class="col-md-3">
+                        <div class="fundpress-single-footer">
+                            <div class="xs-footer-title">
+                                <h4 class="color-white">Ayuda</h4>
+                            </div><!-- .xs-footer-title END -->
+                            <nav class="xs-footer-menu">
+                                <ul>
+                                    <li><a href="#">FAQ</a></li>
+                                    <li><a href="#">Nuestras Reglas</a></li>
+                                    <li><a href="#">Confianza y Seguridad</a></li>
+                                    <li><a href="#">Soporte</a></li>
+                                    <li><a href="#">Terminos y Condiciones</a></li>
+                                    <li><a href="#">Politicas de Privacidad</a></li>
+                                </ul>
+                            </nav><!-- .xs-footer-menu .xs-block-menu END -->
+                        </div><!-- .fundpress-single-footer END -->
+                    </div>
+                </div>
+            </div>
+        </div><!-- .xs-footer-wraper .fundpress-footer-top-layer END -->
+        <div class="xs-footer-bottom-layer fundpress-footer-bottom">
+            <div class="container">
+                <div class="xs-footer-bottom-wraper">
+                    <div class="xs-copyright-text fundpress-copyright-text">
+                        <p>Creado con <i class="fa fa-heart"></i> por <a href="http://recaudar.test">Recaudar.com</a></p>
+                    </div>
+                    <div class="xs-back-to-top-wraper">
+                        <a href="#" class="xs-back-to-top full-round green-btn xs-back-to-top-btn show-last-pos">
+                            <i class="fa fa-angle-up"></i>
+                        </a>
+                    </div><!-- .xs-back-to-top-wraper END -->
+                </div>
+            </div>
+        </div><!-- .xs-footer-bottom-layer .fundpress-footer-bottom END -->
+    </footer>
+    <!-- End Footer section -->
+
+	<script src="src/js/jquery-3.2.1.min.js"></script>
+	<script src="src/js/plugins.js"></script>
+	<script src="src/js/Popper.js"></script>
+	<script src="src/js/bootstrap.min.js"></script>
+	<script src="src/js/jquery.easing.1.3.js"></script>
+	<script src="src/js/isotope.pkgd.min.js"></script>
+	<script src="src/js/jquery.countdown.min.js"></script>
+	<script src="src/js/jquery.magnific-popup.min.js"></script>
+	<script src="src/js/owl.carousel.min.js"></script>
+	<script src="src/s/parallax.min.js"></script>
+	<script src="src/js?v=3&key=AIzaSyCy7becgYuLwns3uumNm6WdBYkBpLfy44k"></script>
+	<script src="src/js/jquery.easypiechart.min.js"></script>
+	<script src="src/js/spectragram.min.js"></script>
+	<script src="src/js/jquery.waypoints.min.js"></script>
+	<script src="src/js/scrollax.js"></script>
+    <script src="src/js/main.js"></script>
+
+</body>
+</html>
