@@ -333,17 +333,39 @@
     </footer>
     <!-- End Footer section -->
 
-        <script>
-            const scriptURL = 'https://script.google.com/macros/s/AKfycbwWk7o3sXXuNFyRsCaV6Vgqx-tz1KTU4va6Lx9qEjIUte6MZwWb/exec'
-            const form = document.forms['submit-to-google-sheet']
-        
-            form.addEventListener('submit', e => {
-            e.preventDefault()
-            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                .then(response => console.log('Success!', response))
-                .catch(error => console.error('Error!', error.message))
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8.13.0/dist/sweetalert2.all.min.js"></script>
+    <script>
+  
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzKkSohoVFGDt3i7mcTHnwWQwCH471iDl2QZ6CYKFbwqTIT5A/exec'
+        const form = document.forms['submit-to-google-sheet']
+
+        form.addEventListener('submit', e => {
+        e.preventDefault()
+        form.submit.disabled=true
+        document.getElementById("submit").innerHTML = "Receiving your info...";
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+            Swal.fire({
+                type: "success",
+                title: "Thank you!",
+                text: "We’ll be in touch with you soon.",
+                showConfirmButton: true,
+                background: "#002B45",
             })
-        </script>
+            document.getElementById("submit").innerHTML = "Thank you!";
+            })
+            .catch(error => {
+            Swal.fire({
+                type: "error",
+                title: "¡Ooops!",
+                text: "Sorry, something is wrong.",
+                
+                
+            })
+            document.getElementById("submit").innerHTML = "Try again later";
+            })
+        })
+    </script>
 
 
 		<script src="../src/js/jquery-3.2.1.min.js"></script>
